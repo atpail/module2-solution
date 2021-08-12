@@ -1,37 +1,62 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+      <meta name='author' content='Atpail'>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 2 Assignment</title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-You can use the [editor on GitHub](https://github.com/atpail/module2-solution/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+.box {
+  float: right;
+  width: 28%;
+  padding: 40px;
+  border: 1px solid black;
+  margin-left: 62;
+  margin-right: 62px;
+  height: 220px;
+}
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+@media screen and (max-width: 992px) {
+  .box {
+    width: 100%;
+  }
+}
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+</style>
+</head>
+<body>
 
-**Bold** and _Italic_ and `Code` text
+<h1 class="title-container" style="text-align: center">Our Menu</h1>
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<div class="row">
+  <div class="box" style="background-color:#bbb;">
+      <div class='menu-title' align="right" id="Sushi" style="color: blue">Sushi</div>
+    <p class='text'>Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat.</p>
+  </div>
+  <div class="box" style="background-color:#bbb;">
+    <div class='menu-title' align="right" id="Beef"style="color: crimson">Beef</div>
+    <p class='text'>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of protein and nutrients. Meat from younger cows (calves) is called veal.</p>
+  </div>
+  <div class="box" style="background-color:#bbb;">
+    <div class='menu-title' align="right" id="Chicken"style="color: darkgreen">Chicken</div>
+    <p class='text'>Chickens are one of the most common and widespread domestic animals, with a total population of 23.7 billion as of 2018, up from more than 19 billion in 2011. There are more chickens in the world than any other bird.</p>
+  </div>
+</div>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/atpail/module2-solution/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
